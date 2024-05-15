@@ -1,0 +1,179 @@
+
+<http://localhost:8080/resources/pipelines/1715778977302-0001> {
+  <http://localhost:8080/resources/pipelines/1715778977302-0001> a <http://linkedpipes.com/ontology/Pipeline>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "LKOD Validácia";
+    <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/events/created> "2024-05-15T15:16:17.303260346"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/lastUpdate> "2024-05-15T15:50:01.437904801"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/profile> <http://localhost:8080/resources/pipelines/1715778977302-0001/profile/default> .
+  
+  <http://localhost:8080/resources/pipelines/1715778977302-0001/profile/default> a <http://linkedpipes.com/ontology/ExecutionProfile>;
+    <http://linkedpipes.com/ontology/rdfRepositoryPolicy> <http://linkedpipes.com/ontology/repository/SingleRepository>;
+    <http://linkedpipes.com/ontology/rdfRepositoryType> <http://linkedpipes.com/ontologyrepository/NativeStore>;
+    <http://etl.linkedpipes.com/ontology/logRetentionPolicy> <http://linkedpipes.com/resources/Keep> .
+  
+  <http://localhost:8080/resources/pipelines/1715778977302-0001/component/1d50-adf8>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Files to RDF";
+    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1715778977302-0001/component/1d50-adf8/configuration>;
+    <http://linkedpipes.com/ontology/x> "684"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "350"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-filesToRdf/0.0.0> .
+  
+  <http://localhost:8080/resources/pipelines/1715778977302-0001/component/49a8-84cc>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Files to RDF";
+    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1715778977302-0001/component/49a8-84cc/configuration>;
+    <http://linkedpipes.com/ontology/x> "684"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "153"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-filesToRdf/0.0.0> .
+  
+  <http://localhost:8080/resources/pipelines/1715778977302-0001/component/5458-940f>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "SHACL";
+    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1715778977302-0001/component/5458-940f/configuration>;
+    <http://linkedpipes.com/ontology/x> "1104"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "221"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-shacl/0.0.0> .
+  
+  <http://localhost:8080/resources/pipelines/1715778977302-0001/component/63bf-97e8>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Graph merger";
+    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1715778977302-0001/component/63bf-97e8/configuration>;
+    <http://linkedpipes.com/ontology/x> "884"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "166"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-graphMerger/0.0.0> .
+  
+  <http://localhost:8080/resources/pipelines/1715778977302-0001/component/89a5-a687>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "HTTP get";
+    <http://purl.org/dc/terms/description> "dcat-ap-sk-3.0.0-shapes.ttl";
+    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1715778977302-0001/component/89a5-a687/configuration>;
+    <http://linkedpipes.com/ontology/x> "317"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "305"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-httpGetFile/0.0.0> .
+  
+  <http://localhost:8080/resources/pipelines/1715778977302-0001/component/95eb-8e4c>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Files from local";
+    <http://purl.org/dc/terms/description> "/data/tmp/lkodgraph.ttl";
+    <http://www.w3.org/2004/02/skos/core#note> "";
+    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1715778977302-0001/component/95eb-8e4c/configuration>;
+    <http://linkedpipes.com/ontology/x> "328"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "220"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-filesFromLocal/0.0.0> .
+  
+  <http://localhost:8080/resources/pipelines/1715778977302-0001/component/b219-ac47>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Graph merger";
+    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1715778977302-0001/component/b219-ac47/configuration>;
+    <http://linkedpipes.com/ontology/x> "900"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "363"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-graphMerger/0.0.0> .
+  
+  <http://localhost:8080/resources/pipelines/1715778977302-0001/connection/00b8-bc16>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1715778977302-0001/component/b219-ac47>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1715778977302-0001/component/5458-940f>;
+    <http://linkedpipes.com/ontology/targetBinding> "Shapes" .
+  
+  <http://localhost:8080/resources/pipelines/1715778977302-0001/connection/4d82-b258>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1715778977302-0001/component/89a5-a687>;
+    <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
+    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1715778977302-0001/component/1d50-adf8>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputFiles" .
+  
+  <http://localhost:8080/resources/pipelines/1715778977302-0001/connection/867b-8683>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1715778977302-0001/component/49a8-84cc>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1715778977302-0001/component/63bf-97e8>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
+  
+  <http://localhost:8080/resources/pipelines/1715778977302-0001/connection/9f5b-ab0d>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1715778977302-0001/component/1d50-adf8>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1715778977302-0001/component/b219-ac47>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
+  
+  <http://localhost:8080/resources/pipelines/1715778977302-0001/connection/d7aa-8627>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1715778977302-0001/component/63bf-97e8>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1715778977302-0001/component/5458-940f>;
+    <http://linkedpipes.com/ontology/targetBinding> "Data" .
+  
+  <http://localhost:8080/resources/pipelines/1715778977302-0001/connection/dd8b-ab50>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1715778977302-0001/component/95eb-8e4c>;
+    <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
+    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1715778977302-0001/component/49a8-84cc>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputFiles" .
+}
+
+<http://localhost:8080/resources/pipelines/1715778977302-0001/component/1d50-adf8/configuration> {
+  <http://localhost:8080/resources/pipelines/1715778977302-0001/component/1d50-adf8/configuration>
+    a <http://plugins.linkedpipes.com/ontology/t-filesToRdf#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdf#commitSize> 50000;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdf#commitSizeControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdf#mimeType> "text/turtle";
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdf#mimeTypeControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdf#softFail> false;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdf#softFailControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<http://localhost:8080/resources/pipelines/1715778977302-0001/component/49a8-84cc/configuration> {
+  <http://localhost:8080/resources/pipelines/1715778977302-0001/component/49a8-84cc/configuration>
+    a <http://plugins.linkedpipes.com/ontology/t-filesToRdf#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdf#commitSize> 50000;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdf#commitSizeControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdf#mimeType> "text/turtle";
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdf#mimeTypeControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdf#softFail> false;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdf#softFailControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<http://localhost:8080/resources/pipelines/1715778977302-0001/component/5458-940f/configuration> {
+  <http://etl.linkedpipes.com/resources/components/t-shacl/0.0.0/configuration/1> a
+      <http://plugins.linkedpipes.com/ontology/t-shacl#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-shacl#failOnError> true;
+    <http://plugins.linkedpipes.com/ontology/t-shacl#failOnErrorControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-shacl#shapesInTurtleControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<http://localhost:8080/resources/pipelines/1715778977302-0001/component/63bf-97e8/configuration> {
+  <http://etl.linkedpipes.com/resources/components/t-graphMerger/0.0.0/configuration/1>
+    a <http://plugins.linkedpipes.com/ontology/t-graphMerger#Configuration> .
+}
+
+<http://localhost:8080/resources/pipelines/1715778977302-0001/component/89a5-a687/configuration> {
+  <http://localhost:8080/resources/pipelines/1715778977302-0001/component/89a5-a687/configuration>
+    a <http://plugins.linkedpipes.com/ontology/e-httpGetFile#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#encodeUrl> false;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#encodeUrlControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileName> "dcat-ap-sk-3.0.0-shapes.ttl";
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileNameControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileUri> "https://raw.githubusercontent.com/slovak-egov/centralny-model-udajov/develop/tbox/national/dcat-ap-sk/povinn%C3%A9-vlastnosti/dcat-ap-sk-3.0.0-shapes.ttl";
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileUriControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#hardRedirect> false;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#hardRedirectControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#userAgent> "";
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#userAgentControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#utf8Redirect> false;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#utf8RedirectControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<http://localhost:8080/resources/pipelines/1715778977302-0001/component/95eb-8e4c/configuration> {
+  <http://localhost:8080/resources/pipelines/1715778977302-0001/component/95eb-8e4c/configuration>
+    a <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path> "/data/tmp/lkodgraph.ttl";
+    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<http://localhost:8080/resources/pipelines/1715778977302-0001/component/b219-ac47/configuration> {
+  <http://etl.linkedpipes.com/resources/components/t-graphMerger/0.0.0/configuration/1>
+    a <http://plugins.linkedpipes.com/ontology/t-graphMerger#Configuration> .
+}
